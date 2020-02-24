@@ -13,6 +13,7 @@ import ErrorPage from 'views/ErrorPage/ErrorPage.js';
 import DashboardPage from 'views/DashboardPage/DashboardPage';
 import ProductDetailPage from 'views/ProductDetailPage';
 import CategoryProductsPage from 'views/CategoryProductsPage';
+import AdminPage from 'views/AdminPage/Index';
 
 const hist = createBrowserHistory();
 
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route exact path="/dashboard" component={DashboardPage} />
       <Route path="/category/:key/:id" component={CategoryProductsPage} />
       <Route path="/product-detail" component={ProductDetailPage} />
+      <Route path="/admin" component={AdminPage} />
     </Switch>
   </Router>,
   document.getElementById('root')
